@@ -1,3 +1,73 @@
 html {
     font-size: 62.5%;
   }
+  
+  /* GENERAL STYLING */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+ }
+ 
+ body {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+ }
+
+ section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+
+ a {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+ }
+
+
+   /* HERO SECTION */
+ .hero {
+    display: flex;
+    flex-direction: row;
+    background-image: url(images/social\ bubbles.jpeg);
+    background-size: 100%;
+    background-color: #A1AEB7;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 100px;  
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #0D133E;
+    text-align: left;
+    padding: 50px;  
+}
+
+.profile img {
+    padding: 0px 50px;
+}
+
+.profile h1 {
+    font-size: 3.2rem;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #0D133E;
+    text-align: left;
+    padding: 50px;   
+}
+
+.bio-item {
+    padding: 25px;
+    flex-grow: 2;
+}
