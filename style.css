@@ -24,8 +24,34 @@ html {
     list-style-type: none;
     padding: 0;
     margin: 0; 
+    text-decoration: none;
+    color: #5C67B9;
+    font-size: 1.8rem;
  }
 
+ h2 {
+    color: #1F174E;
+    font-size: 2.4rem;
+ }
+ 
+ h3 {
+    font-size: 2.0rem;
+ }
+
+ p {
+    font-size: 1.8rem;
+ }
+
+ li {
+ color: #5C67B9;
+ font-size: 1.8rem;
+}
+
+
+
+  a:hover {
+    color: #0D133E;
+  }
 
    /* HERO SECTION */
  .hero {
@@ -39,35 +65,111 @@ html {
     padding: 100px;  
 }
 
+.profile-section {
+    position: absolute;
+}
+
 .profile {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: #0D133E;
     text-align: left;
-    padding: 50px;  
+    /* padding: 50px;   */
+    position: relative;
+    top: -90px;
+
+}
+
+.profile-item ul {
+    padding-top: 15px;
 }
 
 .profile img {
-    padding: 0px 50px;
+    margin: 0px 50px;
+    padding: 15px;
+    background-color: #F6F8FE;
+    border-radius: 8px;
 }
 
 .profile h1 {
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     margin: 0;
-    padding-bottom: 25px;
+    padding-top: 35px;
+    color: #FFFFFF;
 }
 
-.bio {
+/* .wrapper {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #0D133E;
-    text-align: left;
-    padding: 50px;   
+} */
+
+#bio {
+    margin-top: 150px;
 }
 
-.bio-item {
+.wrapper {
+display: flex;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    color: #1F174E;
+    text-align: left;
+    padding: 25px;   
+}
+#portfolio {
+    flex-flow: row-reverse nowrap;
+  }
+
+.one {
     padding: 25px;
-    flex-grow: 2;
+    margin: 0 auto;
+    flex-basis: 75%;
+}
+
+.two {
+    padding: 25px;
+    margin: 0 auto;
+    flex-basis: 25%;
+}
+
+
+
+#bio, #interests {
+    background-color: #F6F8FE;
+}
+
+#bio .one {
+    border-right: 3px solid #EE315E;
+}
+
+#interests {
+align-items: center;
+}
+
+#interests .one {
+    border-right: 3px solid #FFB602;
+}
+
+#portfolio .one {
+    border-left: 3px solid #1CBBA8;
+}
+
+
+#quote {
+    color: #5C67B9;
+}
+
+#meet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#meet h2 {
+    font-size: 4.0rem;
+    text-align: center;
 }
